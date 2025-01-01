@@ -142,6 +142,8 @@ export default function FullWidthTabs() {
         getDocs(certificateCollection),
       ]);
 
+
+
       const projectData = projectSnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
@@ -153,6 +155,9 @@ export default function FullWidthTabs() {
       setProjects(projectData);
       setCertificates(certificateData);
 
+      console.log(projectData);
+      console.log(certificateData);
+
       // Store in localStorage
       localStorage.setItem("projects", JSON.stringify(projectData));
       localStorage.setItem("certificates", JSON.stringify(certificateData));
@@ -163,7 +168,7 @@ export default function FullWidthTabs() {
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

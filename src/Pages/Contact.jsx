@@ -104,7 +104,7 @@ const ContactPage = () => {
           data-aos-duration="1100"
           className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
         >
-          Got a question? Send me a message, and I'll get back to you soon.
+          Got a question? Send me a message, and I&#39;ll get back to you soon.
         </p>
       </div>
 
@@ -112,7 +112,7 @@ const ContactPage = () => {
         className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0"
         id="Contact"
       >
-        <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[45%_55%] 2xl:grid-cols-[35%_65%] gap-12">
+        <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1  gap-12">
           <div
             data-aos="fade-right"
             data-aos-duration="1200"
@@ -207,9 +207,9 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10">
-            <Komentar />
-          </div>
+          {/*<div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10">*/}
+          {/*  <Komentar />*/}
+          {/*</div>*/}
         </div>
       </div>
     </>

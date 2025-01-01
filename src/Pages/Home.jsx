@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, memo } from "react"
-import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
+import { Github, Facebook, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -12,7 +12,7 @@ const StatusBadge = memo(() => (
       <div className="relative px-3 sm:px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
         <span className="bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
           <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-blue-400" />
-          Ready to Innovate
+          Welcome to my Portfolio
         </span>
       </div>
     </div>
@@ -52,7 +52,7 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
       <div className="relative h-11 bg-[#030014] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
         <div className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 bg-gradient-to-r from-[#4f52c9]/20 to-[#8644c5]/20"></div>
         <span className="absolute inset-0 flex items-center justify-center gap-2 text-sm group-hover:gap-3 transition-all duration-300">
-          <span className="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent font-medium z-10">
+          <span className="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent text-sm font-bold z-10">
             {text}
           </span>
           <Icon className={`w-4 h-4 text-gray-200 ${text === 'Contact' ? 'group-hover:translate-x-1' : 'group-hover:rotate-45'} transform transition-all duration-300 z-10`} />
@@ -77,12 +77,11 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const WORDS = ["Software Engineering", "DevOps", "FullStack"];
+const TECH_STACK = ["React", "Next", "Typescript", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/EkiZR" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id" }
+  { icon: Github, link: "https://github.com/ledainghia" },
+  { icon: Facebook, link: "https://www.facebook.com/chals.nit" },
 ];
 
 const Home = () => {
@@ -173,17 +172,20 @@ const Home = () => {
 
                 {/* Typing Effect */}
                 <div className="h-8 flex items-center" data-aos="fade-up" data-aos-delay="800">
-                  <span className="text-xl md:text-2xl bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent font-light">
+                  <span className="text-xl md:text-2xl bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent font-medium">
                     {text}
                   </span>
                   <span className="w-[3px] h-6 bg-gradient-to-t from-[#6366f1] to-[#a855f7] ml-1 animate-blink"></span>
                 </div>
 
                 {/* Description */}
-                <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
+                <p className="text-base sm:text-lg lg:text-xl text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                  Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                  <strong>Hello, I&#39;m Lê Đại Nghĩa – a passionate Frontend Developer!</strong> <br/>
+                  I specialize in building user-friendly, high-performance web applications using Next.js and modern styling frameworks like Tailwind CSS. With a keen eye for detail and a dedication to crafting clean, maintainable code, I strive to deliver seamless digital experiences.
+                  <br/>
+                  Feel free to explore my portfolio to see how I combine creativity and technical expertise to bring ideas to life. Let&#39;s create something amazing together!
                 </p>
 
                 {/* Tech Stack */}

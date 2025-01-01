@@ -50,7 +50,7 @@ const ProfileImage = memo(() => (
           <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
           
           <img
-            src="/Photo.png"
+            src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/471501432_609799144920589_7862976585270935439_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH153FGkihbmVM94apaxAmRBbebOkfNQesFt5s6R81B67fxp7Oro3oA0Ga-kFYwU72gM5s9bun15RmfExGVRttY&_nc_ohc=z2UWlcw4byAQ7kNvgFOXDiY&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=ASCpoLk9E0-knc7Qy_iWG18&oh=00_AYAI0m-A1-u5JSjuWqyufhcO6j7Jd0neYcU4ClWIiLe-SA&oe=677A960A"
             alt="Profile"
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
             loading="lazy"
@@ -172,14 +172,14 @@ const AboutPage = () => {
       description: "Professional skills validated",
       animation: "fade-up",
     },
-    {
-      icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
-      label: "Years of Experience",
-      description: "Continuous learning journey",
-      animation: "fade-left",
-    },
+    // {
+    //   icon: Globe,
+    //   color: "from-[#6366f1] to-[#a855f7]",
+    //   value: YearExperience,
+    //   label: "Years of Experience",
+    //   description: "Continuous learning journey",
+    //   animation: "fade-left",
+    // },
   ], [totalProjects, totalCertificates, YearExperience]);
 
   return (
@@ -198,14 +198,14 @@ const AboutPage = () => {
               data-aos-duration="1000"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                Hello, I'm
+                Hello, I&#39;m
               </span>
               <span 
                 className="block mt-2 text-gray-200"
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                LE DAI NGHIA <span className={"font-medium text-zinc-200 text-2xl"}>(Call me by Chals)</span>
               </span>
             </h2>
             
@@ -214,10 +214,8 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              seorang siswa Teknik Jaringan Komputer dan Telekomunikasi yang
-              tertarik dalam pengembangan Front-End. Saya berfokus pada
-              menciptakan pengalaman digital yang menarik dan selalu berusaha
-              memberikan solusi terbaik dalam setiap proyek.
+
+              I specialize in building user-friendly, high-performance web applications using Next.js and modern styling frameworks like Tailwind CSS. With a keen eye for detail and a dedication to crafting clean, maintainable code, I strive to deliver seamless digital experiences.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
@@ -246,7 +244,7 @@ const AboutPage = () => {
         </div>
 
         <a href="#Portofolio">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 cursor-pointer">
             {statsData.map((stat) => (
               <StatCard key={stat.label} {...stat} />
             ))}
